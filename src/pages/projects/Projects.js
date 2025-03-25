@@ -1,102 +1,115 @@
-import React, { Component } from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import PublicationCard from "../../components/publicationsCard/PublicationCard";
-import Button from "../../components/button/Button";
-import TopButton from "../../components/topButton/TopButton";
-import { Fade } from "react-reveal";
-import {
-  greeting,
-  projectsHeader,
-  publicationsHeader,
-  publications,
-} from "../../portfolio.js";
-import ProjectsData from "../../shared/opensource/projects.json";
+import React from "react";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
+import pawanProjectImg from "../../assets/pawanProjectImg.png";
+import buildYourBuzz from "../../assets/buildYourBuzz.png";
+import farmer2buyer from "../../assets/farme2buyer.png";
+import cloths4u from "../../assets/cloths4u.png";
+import AiWebsiteBuilder from "../../assets/AiWebsiteBuilder.png";
+const Project = () => {
+  const projects = [
+    {
+      title: "Pawan Computer Center",
+      description:
+        "Implemented a secure authentication system and admin dashboard for managing 500+ student records, leveraging MongoDB and Stripe for efficient operations and payment processing.",
+      technologies: [
+        "react.js",
+        "express.js",
+        "node.js",
+        "swiper.js",
+        "mongoDB",
+        "mongoose",
+        "css",
+        "javascript",
+        "figma",
+      ],
+      image: pawanProjectImg,
+      link:
+        "https://www.veed.io/view/b0752902-c2cf-42be-aa37-544f2593785b?panel=share",
+      type: "E-learning website",
+    },
+    {
+      title: "Build Your Buzz",
+      description:
+        "Developed a digital marketing platform using the MERN stack and React Router DOM for smooth navigation, featuring secure user authentication and integrated Nodemailer for effective communication.",
+      technologies: ["react.js", "tailwind.css", "node.js"],
+      image: buildYourBuzz,
+      link: "https://build-your-buzz.vercel.app/",
+      type: "Landing Page",
+    },
+    {
+      title: "Farmer2Buyer",
+      description:
+        "Developed a responsive interface for agricultural products, enhancing accessibility across devices while improving user experience through effective DOM navigation during presentations at SIH India.",
+      technologies: ["react.js", "swiper.js", "css", "javascript", "figma"],
+      image: farmer2buyer,
+      link: "https://farmers-2-sellers.netlify.app/",
+      type: "Hackathon Project",
+    },
+    {
+      title: "Clothes4U",
+      description:
+        "Developed a fully responsive eCommerce website using React.js, enabling users to browse and purchase clothing products effortlessly. Integrated product filtering and search functionalities, improving customer navigation and the overall shopping experience.",
+      technologies: ["react.js", "tailwind.css", "node.js"],
+      image: cloths4u,
+      link: "https://cloths4u.netlify.app/",
+      type: "E-commerce",
+    },
 
-class Projects extends Component {
-  render() {
-    const theme = this.props.theme;
-    return (
-      <div className="projects-main">
-        <Header theme={theme} />
-        <div className="basic-projects">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="projects-heading-div">
-              <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <ProjectsImg theme={theme} />
+    {
+      title: "Ai Website Builder",
+      description:
+        "Developed a fully responsive eCommerce website using React.js, which can create a new website from the users prompts only.",
+      technologies: ["react.js", "tailwind.css", "node.js"],
+      image: AiWebsiteBuilder,
+      link: "",
+      type: "E-commerce",
+    },
+  ];
+
+  return (
+    <>
+      <div className="project-container">
+        <div className="project-title">
+          <h1>Latest Works</h1>
+        </div>
+      </div>
+      <section className="project-section">
+        <div className="project-container-inner">
+          <div className="vertical-line"></div>
+
+          {projects.map((project, index) => (
+            <div key={index} className="project-card">
+              <div className="circle-dot"></div>
+              <div className="horizontal-line"></div>
+
+              <div className="project-image-container">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={project.image} alt={project.title} />
+                </a>
               </div>
-              <div className="projects-heading-text-div">
-                <h1
-                  className="projects-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {projectsHeader.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {projectsHeader["description"]}
-                </p>
+
+              <div className="project-details">
+                <h3>{project.title}</h3>
+                <span>{`(${project.type})`}</span>
+                <p>{project.description}</p>
+                <ul className="project-tech-list">
+                  {project.technologies.map((tech, i) => (
+                    <li key={i} className="project-tech-item">
+                      #{tech}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
-          </Fade>
+          ))}
         </div>
-        <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
-          })}
-        </div>
-        <Button
-          text={"More Projects"}
-          className="project-button"
-          href={greeting.githubProfile}
-          newTab={true}
-          theme={theme}
-        />
+      </section>
+    </>
+  );
+};
 
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
-          <div className="basic-projects">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
-                    {publicationsHeader.title}
-                  </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
-                </div>
-              </div>
-            </Fade>
-          </div>
-        ) : null}
-
-        <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
-          })}
-        </div>
-
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
-      </div>
-    );
-  }
-}
-
-export default Projects;
+export default Project;

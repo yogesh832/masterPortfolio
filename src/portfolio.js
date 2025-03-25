@@ -11,7 +11,7 @@ const seo = {
   description:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Fussion Webworks Portfolio",
     type: "website",
     url: "http://ashutoshhathidara.com/",
   },
@@ -19,11 +19,11 @@ const seo = {
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
+  title: "Fussion Webworks",
   logo_name: "AshutoshHathidara",
   nickname: "layman_brother",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A passionate group of individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
@@ -87,161 +87,139 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Data Science & AI",
+      title: "Frontend Development",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
+        "⚡ Building responsive and dynamic web interfaces",
+        "⚡ Implementing complex UI/UX designs from Figma and Adobe XD",
+        "⚡ Optimizing web performance and SEO",
       ],
       softwareSkills: [
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "Deeplearning",
-          imageSrc: "deeplearning_ai_logo.png",
-        },
-      ],
-    },
-    {
-      title: "Full Stack Development",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          skillName: "HTML",
+          fontAwesomeClassname: "vscode-icons:file-type-html",
           style: {
             color: "#E34F26",
           },
         },
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
+          skillName: "CSS",
+          fontAwesomeClassname: "vscode-icons:file-type-css",
           style: {
             color: "#1572B6",
           },
         },
         {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
           skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
+          fontAwesomeClassname: "logos:javascript",
           style: {
-            backgroundColor: "#000000",
             color: "#F7DF1E",
           },
         },
         {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
+          skillName: "React.js",
+          fontAwesomeClassname: "logos:react",
           style: {
             color: "#61DAFB",
           },
         },
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
+          skillName: "Next.js",
+          fontAwesomeClassname: "logos:nextjs",
           style: {
-            color: "#339933",
+            color: "#000000",
           },
         },
         {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
+          skillName: "Tailwind CSS",
+          fontAwesomeClassname: "logos:tailwindcss-icon",
           style: {
-            color: "#CB3837",
+            color: "#38B2AC",
           },
         },
         {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
+          skillName: "MUI",
+          fontAwesomeClassname: "logos:material-ui",
           style: {
-            color: "#2C8EBB",
-          },
-        },
-        {
-          skillName: "Gatsby",
-          fontAwesomeClassname: "simple-icons:gatsby",
-          style: {
-            color: "#663399",
-          },
-        },
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
+            color: "#0081CB",
           },
         },
       ],
     },
     {
-      title: "Cloud Infra-Architecture",
-      fileName: "CloudInfraImg",
+      title: "Backend Development",
+      fileName: "BackendDevImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Developing scalable and secure REST and GraphQL APIs",
+        "⚡ Implementing authentication & authorization with JWT and OAuth",
+        "⚡ Handling database operations efficiently",
       ],
       softwareSkills: [
         {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
+          skillName: "Node.js",
+          fontAwesomeClassname: "logos:nodejs",
           style: {
-            color: "#4285F4",
+            color: "#339933",
           },
         },
         {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
+          skillName: "Express.js",
+          fontAwesomeClassname: "logos:express",
           style: {
-            color: "#FF9900",
+            color: "#000000",
           },
         },
         {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
+          skillName: "MongoDB",
+          fontAwesomeClassname: "logos:mongodb",
           style: {
-            color: "#0089D6",
+            color: "#47A248",
+          },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "logos:mysql",
+          style: {
+            color: "#4479A1",
+          },
+        },
+        {
+          skillName: "Firebase",
+          fontAwesomeClassname: "logos:firebase",
+          style: {
+            color: "#FFCA28",
+          },
+        },
+      ],
+    },
+    {
+      title: "API Development & Integration",
+      fileName: "APIDevelopmentImg",
+      skills: [
+        "⚡ Developing robust RESTful and GraphQL APIs",
+        "⚡ Integrating third-party services like payment, maps, and email services",
+        "⚡ Implementing API security with authentication and rate-limiting",
+      ],
+      softwareSkills: [
+        {
+          skillName: "GraphQL",
+          fontAwesomeClassname: "simple-icons:graphql",
+          style: {
+            color: "#E10098",
+          },
+        },
+        {
+          skillName: "Postman",
+          fontAwesomeClassname: "simple-icons:postman",
+          style: {
+            color: "#FF6C37",
+          },
+        },
+        {
+          skillName: "Swagger",
+          fontAwesomeClassname: "simple-icons:swagger",
+          style: {
+            color: "#85EA2D",
           },
         },
         {
@@ -252,70 +230,129 @@ const skills = {
           },
         },
         {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
+          skillName: "Twilio",
+          fontAwesomeClassname: "simple-icons:twilio",
           style: {
-            color: "#336791",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
-        },
-        {
-          skillName: "Kubernetes",
-          fontAwesomeClassname: "simple-icons:kubernetes",
-          style: {
-            color: "#326CE5",
+            color: "#F22F46",
           },
         },
       ],
     },
     {
       title: "UI/UX Design",
-      fileName: "DesignImg",
+      fileName: "CloudInfraImg",
       skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
+        "⚡ Creating engaging and modern UI/UX designs",
+        "⚡ Converting Figma & Adobe XD designs into interactive UIs",
       ],
       softwareSkills: [
         {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
           skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
+          fontAwesomeClassname: "logos:figma",
           style: {
             color: "#F24E1E",
           },
         },
         {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
+          skillName: "Adobe XD",
+          fontAwesomeClassname: "simple-icons:adobexd",
           style: {
-            color: "#FF7C00",
+            color: "#FF61F6",
+          },
+        },
+      ],
+    },
+    {
+      title: "Cloud & DevOps",
+      fileName: "CloudDevOpsImg",
+      skills: [
+        "⚡ Deploying scalable web applications on cloud platforms",
+        "⚡ Implementing CI/CD pipelines for automated deployment",
+      ],
+      softwareSkills: [
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "logos:aws",
+          style: {
+            color: "#FF9900",
           },
         },
         {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
+          skillName: "Docker",
+          fontAwesomeClassname: "logos:docker-icon",
+          style: {
+            color: "#1488C6",
+          },
+        },
+      ],
+    },
+    {
+      title: "Custom Web Applications",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Developing tailor-made web applications for businesses and startups",
+        "⚡ Implementing authentication systems using JWT and OAuth",
+        "⚡ Creating dashboards for analytics and business intelligence",
+        "⚡ Integrating third-party APIs for enhanced functionalities",
+      ],
+      softwareSkills: [
+        {
+          skillName: "OAuth",
+          fontAwesomeClassname: "simple-icons:oauth",
+          style: {
+            color: "#1E90FF",
+          },
+        },
+        {
+          skillName: "JWT",
+          fontAwesomeClassname: "simple-icons:jsonwebtokens",
           style: {
             color: "#000000",
+          },
+        },
+        {
+          skillName: "Redis",
+          fontAwesomeClassname: "simple-icons:redis",
+          style: {
+            color: "#DC382D",
+          },
+        },
+        {
+          skillName: "RabbitMQ",
+          fontAwesomeClassname: "simple-icons:rabbitmq",
+          style: {
+            color: "#FF6600",
+          },
+        },
+      ],
+    },
+    {
+      title: "Databases",
+      fileName: "DatabaseImg",
+      skills: [
+        "⚡ Designing and optimizing database architectures",
+        "⚡ Implementing NoSQL and SQL-based solutions",
+      ],
+      softwareSkills: [
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "logos:mongodb",
+          style: {
+            color: "#47A248",
+          },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "logos:mysql",
+          style: {
+            color: "#4479A1",
+          },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "logos:postgresql",
+          style: {
+            color: "#336791",
           },
         },
       ],
@@ -686,7 +723,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "Our projects makes use of vast variety of latest technology tools. Our best experience is to create Full Stack Web Development projects and deploy them to web applications using cloud infrastructure.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -728,7 +765,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "animated_ashutosh.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "We are available on almost every social media. You can message us, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
   },
   blogSection: {
     title: "Blogs",

@@ -27,7 +27,7 @@ class Header extends Component {
             <NavLink to={link} tag={Link} className="logo">
               <span style={{ color: theme.text }}> &lt;</span>
               <span className="logo-name" style={{ color: theme.text }}>
-                {greeting.logo_name}
+                Fusion WebWorks
               </span>
               <span style={{ color: theme.text }}>/&gt;</span>
             </NavLink>
@@ -48,19 +48,8 @@ class Header extends Component {
                   Home
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/education"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Education
-                </NavLink>
-              </li>
-              <li>
+
+              {/* <li>
                 <NavLink
                   to="/experience"
                   tag={Link}
@@ -71,7 +60,7 @@ class Header extends Component {
                 >
                   Experience
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/projects"
@@ -84,18 +73,7 @@ class Header extends Component {
                   Projects
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/opensource"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
-              </li>
+
               <li>
                 <NavLink
                   to="/contact"
@@ -105,7 +83,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Contact Me
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
